@@ -19,10 +19,9 @@ public class User {
 
     private String bbb;
 
-    public User() {
-    }
+    private Boolean xxx;
 
-    public User(String name, Integer age, String sex, Long aaa, String test, String zzz, String bbb) {
+    public User(String name, Integer age, String sex, Long aaa, String test, String zzz, String bbb, Boolean xxx) {
         this.name = name;
         this.age = age;
         this.sex = sex;
@@ -30,6 +29,24 @@ public class User {
         this.test = test;
         this.zzz = zzz;
         this.bbb = bbb;
+        this.xxx = xxx;
+    }
+
+    public User() {
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", sex='" + sex + '\'' +
+                ", aaa=" + aaa +
+                ", test='" + test + '\'' +
+                ", zzz='" + zzz + '\'' +
+                ", bbb='" + bbb + '\'' +
+                ", xxx=" + xxx +
+                '}';
     }
 
     public String getName() {
@@ -88,16 +105,11 @@ public class User {
         this.bbb = bbb;
     }
 
-    @Override
-    public String toString() {
-        return "User{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                ", sex='" + sex + '\'' +
-                ", aaa=" + aaa +
-                ", test='" + test + '\'' +
-                ", zzz='" + zzz + '\'' +
-                ", bbb='" + bbb + '\'' +
-                '}';
+    public Boolean getXxx() {
+        return xxx;
+    }
+
+    public void setXxx(Boolean xxx) {
+        this.xxx = xxx;
     }
 }
