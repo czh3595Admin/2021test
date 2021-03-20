@@ -12,4 +12,8 @@ public class User {
 
     private Long aaa;
 
+    private String zzz;
+
+    private String bbb;
+
 }
