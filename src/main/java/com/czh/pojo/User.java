@@ -1,7 +1,5 @@
 package com.czh.pojo;
 
-
-
 public class User {
 
     private String name;
@@ -20,6 +18,8 @@ public class User {
     private String bbb;
 
     private Boolean xxx;
+
+    private String ceshi;
 
     public User(String name, Integer age, String sex, Long aaa, String test, String zzz, String bbb, Boolean xxx) {
         this.name = name;
